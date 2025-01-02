@@ -42558,7 +42558,7 @@ components:
           items:
             $ref: '#/components/schemas/DetailedCountryField'
           readOnly: true
-        check_history:
+        check_history_distance:
           type: boolean
         history_max_distance_km:
           type: integer
@@ -42570,6 +42570,12 @@ components:
           maximum: 2147483647
           minimum: 0
         history_login_count:
+          type: integer
+          maximum: 2147483647
+          minimum: 0
+        check_impossible_travel:
+          type: boolean
+        impossible_tolerance_km:
           type: integer
           maximum: 2147483647
           minimum: 0
@@ -42605,7 +42611,7 @@ components:
           items:
             $ref: '#/components/schemas/CountryCodeEnum'
           maxItems: 249
-        check_history:
+        check_history_distance:
           type: boolean
         history_max_distance_km:
           type: integer
@@ -42617,6 +42623,12 @@ components:
           maximum: 2147483647
           minimum: 0
         history_login_count:
+          type: integer
+          maximum: 2147483647
+          minimum: 0
+        check_impossible_travel:
+          type: boolean
+        impossible_tolerance_km:
           type: integer
           maximum: 2147483647
           minimum: 0
@@ -49020,7 +49032,7 @@ components:
           items:
             $ref: '#/components/schemas/CountryCodeEnum'
           maxItems: 249
-        check_history:
+        check_history_distance:
           type: boolean
         history_max_distance_km:
           type: integer
@@ -49032,6 +49044,12 @@ components:
           maximum: 2147483647
           minimum: 0
         history_login_count:
+          type: integer
+          maximum: 2147483647
+          minimum: 0
+        check_impossible_travel:
+          type: boolean
+        impossible_tolerance_km:
           type: integer
           maximum: 2147483647
           minimum: 0
